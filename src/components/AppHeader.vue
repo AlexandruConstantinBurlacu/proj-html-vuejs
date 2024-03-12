@@ -8,7 +8,7 @@
     <div class="headerContainer">
         <div class="topNav">
             <div class="logo">
-                <img src="C:\Users\alexa\OneDrive\Desktop\Boolean 118\VITE\proj-html-vuejs\src\assets\images\author-logo-round-200x205.png" alt="Logo Avada">
+                <img src="../assets/images/author-logo-round-200x205.png" alt="Logo Avada">
             </div>
             <ul>
                 <li>Home</li>
@@ -41,7 +41,7 @@
         <div class="latestBook">
 
             <div class="miniContainer">
-                <img src="" alt="">
+                <img src="../assets/images/book-widget.png" alt="">
                 <div class="lbRelease">
                     <h3>
                         Latest Book Release
@@ -201,7 +201,6 @@
                     flex: 50%;
                     height: 137px;
                     width: 167px;
-                    border: 1px solid black;
                 }
 
                 .lbRelease {
