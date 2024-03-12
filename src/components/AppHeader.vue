@@ -18,9 +18,24 @@
                 <li>Meetups</li>
                 <li>Shop</li>
                 <li>Contact Me</li>
-                <li>Carrello Shopping</li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
             </ul>
 
+        </div>
+
+        <div class="introduction">
+            <h1>Damon Vaughn</h1>
+            <h2>
+                Best-Selling author and the most influential public
+                intellectual in the western world right now.
+            </h2>
+
+            <h4>- The New York Times</h4>
+
+            <div class="arrow_container">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
         </div>
 
         <div class="latestBook">
@@ -35,18 +50,20 @@
                         d. vaughn autobiography
                     </h4>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat saepe commodi at, inventore non!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
             </div>
 
             <div>
-                <div class="buy">
-                    LOGO AMAZON Buy On Amazon
-                </div>
-                <div class="buy">
-                    LOGO APPLE Buy On AppStore
-                </div>
+                <button class="buy angles">
+                    <i class="fa-brands fa-amazon"></i>
+                     Buy On Amazon
+                </button>
+                <button class="buy angles_2">
+                    <i class="fa-brands fa-apple"></i>
+                    Buy On AppStore
+                </button>
             </div>
             
         </div>
@@ -64,10 +81,11 @@
         
         
         position: relative;
-        height: 800px;
+        height: 534px;
         background-image: url("../assets/images/hero-07-2x.jpg");
         background-size: cover;
         background-position: center;
+        
 
 
         .topNav {
@@ -75,15 +93,15 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-left: 164px;
-            margin-right: 144px;
+            margin-left: 110px;
+            margin-right: 96px;
 
             .logo {
                 img {
-                    margin-top: 26px;
+                    margin-top: 18px;
                     position: relative;
-                    height: 132px;
-                    width: 132px;
+                    height: 88px;
+                    width: 88px;
                     object-fit: cover;
                     cursor: pointer;
                 }
@@ -92,19 +110,65 @@
             ul {
                 position: relative;
                 display: flex;
-                gap: 44px;
+                gap: 30px;
                 
                 li {
                     list-style-type: none;
                     cursor: pointer;
-                    padding-top: 46px;
+                    padding-top: 31px;
                 }
             }
         }
 
+        .introduction {
+            position: absolute;
+            top: 157px;
+            left: 157px;
+            max-width: 467px;
+
+            h1 {
+                color: #f4b429;
+                font-size: 38px;
+                margin-bottom: 32px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h4 {
+                color: #a3a3a3;
+                font-style: italic;
+                margin-top: 31px;
+                margin-bottom: 30px;
+            }
+
+            .arrow_container {
+                display: flex;
+                gap: 1px;
+            }
+
+            .arrow_container i {
+                background-color: #0a0a0a;
+                padding: 12px;
+                cursor: pointer;
+            }
+
+            .arrow_container i:first-of-type {
+                border-radius: 6px 0 0 6px;
+            }
+
+            .arrow_container i:last-of-type {
+                border-radius: 0 6px 6px 0;
+            }
+        }
+
         .latestBook {
-            height: 400px;
-            width: 688px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 267px;
+            width: 459px;
             background-color: white;
             position: absolute;
             bottom: 0;
@@ -112,15 +176,20 @@
 
             .miniContainer {
                 display: flex;
-                gap: 24px;
-                margin-left: 70px;
-                margin-right: 70px;
-                margin-top: 54px;
+                gap: 16px;
+                margin-left: 47px;
+                margin-right: 47px;
+                margin-top: 36px;
 
                 img {
-                height: 205px;
-                width: 250px;
-                border: 1px solid black;
+                    flex: 50%;
+                    height: 137px;
+                    width: 167px;
+                    border: 1px solid black;
+                }
+
+                .lbRelease {
+                    flex: 50%;
                 }
 
                 .lbRelease h3 , .lbRelease p {
@@ -131,6 +200,29 @@
                     color: #f4b429;
                     text-transform: uppercase;
                 }
+            }
+
+            .buy {
+                background-color: white;
+                color: black;
+                border: 1px solid #49a987;
+                padding-top: 12px;
+                padding-left: 42px;
+                padding-right: 42px;
+                padding-bottom: 12px;
+                margin-top: 28px;
+
+                i {
+                    margin-right: 6px;
+                }
+            }
+
+            .angles {
+                border-radius: 10px 0 0 10px;
+            }
+
+            .angles_2 {
+                border-radius: 0 10px 10px 0;
             }
 
             
