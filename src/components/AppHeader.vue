@@ -76,6 +76,10 @@
 
 <style lang="scss">
 
+    .headerContainer * {
+        color: white;
+    }
+
     .headerContainer {
 
         
@@ -85,6 +89,18 @@
         background-image: url("../assets/images/hero-07-2x.jpg");
         background-size: cover;
         background-position: center;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, #000000);
+            pointer-events: none;
+        }
         
 
 
@@ -203,13 +219,11 @@
             }
 
             .buy {
+                cursor: pointer;
                 background-color: white;
                 color: black;
                 border: 1px solid #49a987;
-                padding-top: 12px;
-                padding-left: 42px;
-                padding-right: 42px;
-                padding-bottom: 12px;
+                padding: 12px 42px;
                 margin-top: 28px;
 
                 i {
