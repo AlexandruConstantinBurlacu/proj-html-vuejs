@@ -260,7 +260,7 @@
       <div class="recentRight_container">
         <img src="../assets/images/thumb-08-2x-320x202.jpg" alt="">
         <h4>
-          What's On Your Booklist?
+          Istanbul Travel Guide
         </h4>
         <span>
           October 24th, 2019 | 0 Comments
@@ -697,6 +697,33 @@
 
     .recentRight {
       flex: 40%;
+      border: 1px solid red;
+
+      button {
+        background-color: #f4b429;
+        border: none;
+        padding: 10px 52px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .recentRight_container {
+        padding: 32px;
+        background-color: white;
+
+        img {
+          width: 100%;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
     }
     
     
