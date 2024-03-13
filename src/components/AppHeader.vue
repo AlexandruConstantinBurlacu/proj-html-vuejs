@@ -200,7 +200,7 @@
                 img {
                     flex: 50%;
                     height: 137px;
-                    width: 167px;
+                    width: auto;
                 }
 
                 .lbRelease {

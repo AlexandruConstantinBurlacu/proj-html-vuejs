@@ -106,6 +106,56 @@
     </div>
   </div>
 
+  <div class="upcomingEvents">
+    <h2>
+      Upcoming Events
+    </h2>
+    <h6>
+      meet the author in person
+    </h6>
+    <div class="meeting">
+      <div class="square">
+        <img src="../assets/images/event-05-400x240.jpg" alt="Event 1">
+        <div class="infoEvents">
+          <h4>
+          Chicago Book Signing
+          </h4>
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        
+      </div>
+      <div class="square">
+        <img src="../assets/images/event-04-400x240.jpg" alt="Event 2">
+        <div class="infoEvents">
+          <h4>
+          Meet & Greet With Amanda
+          </h4>
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        
+      </div>
+      <div class="square">
+        <img src="../assets/images/event-07-400x240.jpg" alt="Event 3">
+        <div class="infoEvents">
+          <h4>
+          Open Book: Dialogues
+          </h4>
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <style lang="scss">
@@ -306,6 +356,60 @@
         gap: 20px;
       }
     } 
+  }
+
+  .upcomingEvents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fef7e9;
+
+    h2 {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    h6 {
+      color: #f4b429;
+      text-transform: uppercase;
+    }
+
+    .meeting {
+      display: flex;
+      flex-direction: row;
+      gap: 34px;
+
+      .square {
+        margin-top: 60px;
+        margin-bottom: 62px;
+        background-color: white;
+        max-width: 304px;
+        height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .infoEvents {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 23px;
+
+          hr {
+            width: 100%;
+            margin-top: 19px;
+            margin-bottom: 19px;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+        
+      }
+    }
   }
 
   
