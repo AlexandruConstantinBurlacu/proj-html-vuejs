@@ -156,6 +156,73 @@
     </div>
   </div>
 
+  <div class="newsletter">
+    <h2>
+      Subscribe To My <br> Newsletter
+    </h2>
+    <h6>
+      be notified about book signing tour dates
+    </h6>
+    <form action="">
+      <input type="email" id="email" name="email" class="insertEmail" placeholder="Insert your email ...*">
+      <input type="submit" value="Subscribe" class="subscribe">
+    </form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </p>
+
+  </div>
+
+  <div class="littleDeeper">
+    <h2>
+      Dig A Little Deeper Into Damon Vaughn
+    </h2>
+    <h6>
+      find out more about the author himself
+    </h6>
+    <div class="findMore">
+      <div class="square_2 box_1">
+        <div class="personalAuthor">
+          <h4>
+          Chicago Book Signing
+          </h4>
+          <hr>
+          <p>
+          Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        
+      </div>
+      <div class="square_2 box_2">
+    
+        <div class="personalAuthor">
+          <h4>
+          Chicago Book Signing
+          </h4>
+          <hr>
+          <p>
+          Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        
+      </div>
+      <div class="square_2 box_3">
+       
+        <div class="personalAuthor">
+          <h4>
+          Chicago Book Signing
+          </h4>
+          <hr>
+          <p>
+          Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>>
+
 </template>
 
 <style lang="scss">
@@ -408,6 +475,132 @@
           }
         }
         
+      }
+    }
+  }
+
+  .newsletter * {
+    color: white;
+  }
+
+  .newsletter {
+    background-image: url("../assets/images/banner-2.jpg");
+    height: 382px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    h6 {
+      text-transform: uppercase;
+      color: #f4b429;
+      margin-top: 19px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      gap: 14px;
+      margin-bottom: 30px;
+
+      .insertEmail {
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+      }
+      
+      .subscribe {
+        padding: 12px 35px;
+        background-color: #49a987;
+        border-radius: 6px;
+      }
+    }
+
+    p {
+      color: #8e8e8e;
+    }
+  }
+
+  .littleDeeper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+    h6 {
+      text-transform: uppercase;
+      color: #49a987;
+      margin-top: 20px;
+    }
+
+    .findMore {
+      display: flex;
+      flex-direction: row;
+      gap: 34px;
+      margin-top: 43px;
+      
+      .box_1 {
+        background-image: url("../assets/images/box-1.jpg");
+      }
+
+      .box_2 {
+        background-image: url("../assets/images/box-4.jpg");
+      }
+
+      .box_3 {
+        background-image: url("../assets/images/box-3.jpg");
+      }
+
+      .square_2 * {
+        color: white;
+      }
+
+      
+
+      .square_2 {
+        
+        background-size: cover;
+        background-position: center;
+        width: 277px;
+        height: 338px;
+        border-radius: 0px 0px 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+
+        
+
+        .personalAuthor {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px;
+
+          h4 {
+            font-size: 18px;
+          }
+          
+          hr {
+            width: 25%;
+            margin-top: 14px;
+            margin-bottom: 19px;
+          }
+
+          p {
+            color: #f4b429;
+            text-align: center;
+          }
+        }
       }
     }
   }
