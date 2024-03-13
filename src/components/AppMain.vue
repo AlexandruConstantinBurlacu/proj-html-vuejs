@@ -221,7 +221,53 @@
       </div>
       
     </div>
-  </div>>
+  </div>
+
+  <div class="recentArticles">
+    <div class="recentLeft">
+      <h2>
+        Recent Articles
+      </h2>
+      <h6>
+        read the latest entries
+      </h6>
+      <div class="creativityTips">
+        <img src="../assets/images/20-Tips-400x235.jpg" alt="">
+        <h4>
+          20 Creativity Tips
+        </h4>
+        <span>
+          By admin | October 24th, 2019 | Categories: Event, Tips & Tricks
+        </span>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+    <div class="recentRight">
+      <button type="button">
+        All Articles
+      </button>
+      <div class="recentRight_container">
+        <img src="../assets/images/thumb-13-2x-320x202.jpg" alt="">
+        <h4>
+          What's On Your Booklist?
+        </h4>
+        <span>
+          October 24th, 2019 | 0 Comments
+        </span>
+      </div>
+      <div class="recentRight_container">
+        <img src="../assets/images/thumb-08-2x-320x202.jpg" alt="">
+        <h4>
+          What's On Your Booklist?
+        </h4>
+        <span>
+          October 24th, 2019 | 0 Comments
+        </span>
+      </div>
+    </div>
+  </div>
 
 </template>
 
@@ -603,6 +649,57 @@
         }
       }
     }
+  }
+
+  .recentArticles {
+    background-color: #fef7e9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    padding: 80px 187px 87px 187px;
+
+    .recentLeft {
+      width: 587px;
+      border: 1px solid red;
+      flex: 60%;
+
+      h6 {
+        text-transform: uppercase;
+        color: #49a987;
+        margin-bottom: 26px;
+        margin-top: 20px;
+      }
+
+      .creativityTips {
+        background-color: white;
+        padding: 32px;
+        
+        img {
+          width: 100%;
+        }
+
+        h4 {
+          font-size: 18px;
+          margin-top: 32px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+
+        p {
+          margin-top: 23px;
+        }
+      }
+    }
+
+    .recentRight {
+      flex: 40%;
+    }
+    
+    
   }
 
   
