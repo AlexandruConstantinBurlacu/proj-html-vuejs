@@ -566,6 +566,7 @@
         padding: 12px 35px;
         background-color: #49a987;
         border-radius: 6px;
+        cursor: pointer;
       }
     }
 
@@ -662,7 +663,6 @@
 
     .recentLeft {
       width: 587px;
-      border: 1px solid red;
       flex: 60%;
 
       h6 {
@@ -697,7 +697,6 @@
 
     .recentRight {
       flex: 40%;
-      border: 1px solid red;
 
       button {
         background-color: #f4b429;

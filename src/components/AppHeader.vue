@@ -224,9 +224,15 @@
                 border: 1px solid #49a987;
                 padding: 12px 42px;
                 margin-top: 28px;
+                transition: background-color 0.3s;
 
                 i {
                     margin-right: 6px;
+                    color: black;
+                }
+
+                &:hover {
+                    background-color: mix(white, #49a987, 75%);
                 }
             }
 
